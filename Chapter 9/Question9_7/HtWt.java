@@ -3,7 +3,8 @@ package Question9_7;
 public class HtWt implements Comparable {
 	private int Ht;
 	private int Wt;
-	public HtWt(int h, int w) { Ht = h; Wt = w; }
+	private HtWt	pre = null;
+	public HtWt(int h, int w) { Ht = h; Wt = w;}
 	
 	public int compareTo( Object s ) {
 		HtWt second = (HtWt) s;
@@ -18,11 +19,30 @@ public class HtWt implements Comparable {
 		return "(" + Ht + ", " + Wt + ")";
 	}
 	
+	public String printForward(){
+		HtWt curPre = this.pre;
+		StringBuffer sb = new StringBuffer();
+		sb.append("(" + Ht + ", " + Wt + ")");
+		while (curPre != null){
+			sb.append(" -> " + curPre.toString());
+			curPre = curPre.getPre();
+		}
+		return sb.toString();
+	}
+	
 	public boolean isBefore(HtWt other) {
 		if (this.Ht < other.Ht && this.Wt < other.Wt) {
 			return true;
 		} else {
 			return false;
 		}
+	}
+
+	public HtWt getPre() {
+		return pre;
+	}
+
+	public void setPre(HtWt pre) {
+		this.pre = pre;
 	}
 }

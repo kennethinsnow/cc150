@@ -54,7 +54,7 @@ public class Question {
 		item = new HtWt(70, 150);
 		items.add(item);
 		
-		item = new HtWt(56, 90);
+		item = new HtWt(56, 190);
 		items.add(item);
 		
 		item = new HtWt(75, 190);

@@ -1,6 +1,6 @@
 package Question9_7;
 
-public class HtWt implements Comparable {
+public class HtWt implements Comparable<Object> {
 	private int Ht;
 	private int Wt;
 	private HtWt	pre = null;

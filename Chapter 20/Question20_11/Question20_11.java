@@ -2,7 +2,7 @@ package Question20_11;
 
 import CareerCupLibrary.AssortedMethods;
 
-public class Question20_10 {
+public class Question20_11 {
 	public static Subsquare findSquare(int[][] matrix){
 		assert(matrix.length > 0);
 		for (int row = 0; row < matrix.length; row++){

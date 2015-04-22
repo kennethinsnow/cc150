@@ -27,7 +27,7 @@ public class Question {
 				if (j.equals(arr[i])) continue;
 				str = str.replaceAll(j, "");
 			}
-			/* If we get a string of size 0, it’s the required word */
+			/* If we get a string of size 0, itï¿½s the required word */
 			if (str.length() == 0) {
 				System.out.println("Longest word: " + arr[i]);
 				return;
@@ -38,8 +38,8 @@ public class Question {
 
 	public static void main(String[] args) {
 		String arr[] = {"test", "tester", "testertest", "testing", 
-				"apple", "seattle", "banana",  "batting", "cat", 
-				"bat", "testingtester", "testbattingcat"};
+	            "apple", "seattle", "banana",  "batting", "ngcat", 
+	            "batti","bat", "testingtester", "testbattingcat"};
 		printLongestWord(arr);
 	}
 }
